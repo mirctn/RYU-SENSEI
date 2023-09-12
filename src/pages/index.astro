@@ -1,0 +1,52 @@
+---
+import ryuLogo from "../assests/ryu_site_logo.png"
+import '@fontsource-variable/lexend-exa';
+import arrow from "../assests/Polygon 1.png"
+import soundcloud from "../assests/soundcloud.png"
+import apple from "../assests/itunes-note.png"
+import youtube from "../assests/youtube.png"
+import tidal from "../assests/tidal.png"
+import amazon from "../assests/amazon.png"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/RYU_1024.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title class="font-lexada">RYUSENSEI</title>
+	</head>
+	<body class="bg-black">
+		<img class="mx-auto pt-24 w-1/3 h-1/5" src={ryuLogo.src} alt="Ryu Logo">
+		<p class="text-l text-white font-lexada text-center pt-32">Wake the f*ck up Ryu!</p>
+		<img class="mx-auto pt-72" src={arrow.src} alt="">
+		<h1 class="text-white text-4xl pt-52 text-center font-lexada pb-14">STREAM</h1>
+		<iframe class="w-1/2 bg-black mx-auto" src="https://open.spotify.com/embed/artist/3TVyPw2X20gUJOxpXhyBEw?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		<div class="grid mx-auto grid-cols-5 gap-x-1 justify-items-center max-w-3xl pt-2">
+			<a href="https://soundcloud.com/senseiryu" target="_blank"><img class="w-12" src={soundcloud.src} alt=""></a>
+			<a href="https://music.apple.com/de/artist/ryu-sensei/1599542088?l=en-GB" target="_blank"><img class="w-6" src={apple.src} alt=""></a>
+			<a href="https://youtube.com/@RYUSENSE1?si=fc9aII8h8nmXK2za" target="_blank"><img class="w-10" src={youtube.src} alt=""></a>
+			<a href="https://tidal.com/browse/artist/33639244" target="_blank"><img class="w-12" src={tidal.src} alt=""></a>
+			<a href="https://music.amazon.com/artists/B09NCBR58W/ryu-sensei" target="_blank"><img class="w-8" src={amazon.src} alt=""></a>
+		</div>
+		<h1 class="text-white text-4xl pt-64 text-center font-lexada pb-14">Gallery</h1>
+		<h1 class="text-white text-4xl pt-36 text-center font-lexada pb-14">Contact</h1>
+		<form action="https://formspree.io/f/xqkvlkye" method="POST" class="text-center ">
+			<label class="text-white font-lexada">
+				EMAIL
+				<input type="text" name="email" class="bg-black border-solid border-2 border-white rounded-3xl block mx-auto mb-8">
+			</label>
+			<label class="text-white font-lexada">
+				NAME
+				<input type="text" name="name" class="bg-black border-solid border-2 border-white rounded-3xl block mx-auto mb-12">
+			</label>
+			<label class="text-white font-lexada ">
+				MESSAGE
+				<textarea rows="4" class="block mx-auto bg-black border-solid border-2 w-1/3 h-36 pb-"></textarea>
+			</label>
+			<button class="text-white pt-4 pb-4" type="submit" >SUBMIT</button>
+		</form>
+		<div class="h-24"></div>
+	</body>
+</html>
