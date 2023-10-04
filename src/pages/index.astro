@@ -9,6 +9,8 @@ import tidal from "../assests/tidal.png"
 import amazon from "../assests/amazon.png"
 import insta from "../assests/instagram.png"
 import twitter from "../assests/twitter.png"
+import right from "../../public/ryu1.jpg"
+import left from "../../public/ryu2.jpg"
 ---
 
 <html lang="en">
@@ -19,10 +21,17 @@ import twitter from "../assests/twitter.png"
 		<meta name="generator" content={Astro.generator} />
 		<title class="font-lexada">RYUSENSEI</title>
 	</head>
-	<body class="bg-black">
-		<img class="mx-auto pt-24 w-96" src={ryuLogo.src} alt="Ryu Logo">
-		<p class="text-m text-white font-lexada text-center pt-48">Wake the f*ck up Ryu!</p>
-		<img class="mx-auto pt-32 lg:pt-56 xl:pt-72 min-p" src={arrow.src} alt="">
+	<body class="bg-black"> 
+		<div class="lg:grid grid-cols-3 place-content-between justify-between relative">
+			<img class=" lg:block w-80 h-screen mx-auto lg:mx-0" src={left.src} alt="">
+			<img class=" hidden lg:block mx-auto pt-24 w-96" src={ryuLogo.src} alt="Ryu Logo">
+			<img class=" hidden lg:block w-96 justify-self-end h-screen" src={right.src} alt="">
+			<div class=" hidden lg:block lg:absolute lg:left-[45%] lg:top-2/4">
+				<p class="text-m text-white font-lexada text-center">Wake the f*ck up Ryu!</p>
+				<img class="mx-auto pt-32 lg:pt-56 xl:pt-72 min-p" src={arrow.src} alt="">
+			</div>
+		</div>
+		
 		<h1 class="text-white text-4xl pt-64 text-center font-lexada pb-14">STREAM</h1>
 		<iframe class="w-1/2 bg-black mx-auto min-w-fit" src="https://open.spotify.com/embed/artist/3TVyPw2X20gUJOxpXhyBEw?utm_source=generator&theme=0" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 		<div class="grid mx-auto grid-cols-5 gap-x-0 justify-items-center max-w-2xl pt-8 columns-sm">
